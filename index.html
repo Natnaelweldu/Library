@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="assets/style/style.css" />
-    <script defer src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -197,7 +197,7 @@
         </div>
       </div>
       <div class="lower-heading flex-box">
-        <div class="option flex-box">
+        <div class="option animate filter flex-box">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -220,7 +220,7 @@
           </svg>
           <p>Filter</p>
         </div>
-        <div class="option flex-box">
+        <div class="option animate share flex-box">
           <svg
             viewBox="-0.5 0 25 25"
             fill="none"
@@ -244,7 +244,7 @@
           </svg>
           <p>Share</p>
         </div>
-        <div class="option flex-box">
+        <div class="option animate add-book flex-box">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -272,11 +272,45 @@
           <p>Add Book</p>
         </div>
       </div>
+      <form action="#" class=".form">
+        <div class="labels">
+          <label for="title">Title </label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div class="labels">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" />
+        </div>
+        <div class="labels">
+          <label for="pages">Pages</label>
+          <input type="number" name="pages" id="pages" />
+        </div>
+        <input type="submit" value="Add Book" />
+      </form>
+      <div class="filter-form">
+        <div class="labels">
+          <input type="radio" name="read" id="read" />
+          <label for="read">By Read</label>
+        </div>
+        <div class="labels">
+          <input type="radio" name="date" id="date" />
+          <label for="date">By Date</label>
+        </div>
+        <div class="labels">
+          <input type="radio" name="alphabet" id="alphabet" />
+          <label for="alphabet">By Alphabet</label>
+        </div>
+        <hr />
+        <div class="buttons">
+          <button>Ascending</button>
+          <button>Descending</button>
+        </div>
+      </div>
     </header>
 
     <nav>
       <div class="upper-nav">
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             viewBox="0 0 16 16"
             fill="none"
@@ -297,7 +331,7 @@
           </svg>
           <p>Home</p>
         </div>
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             fill="#000000"
             version="1.1"
@@ -322,7 +356,7 @@
           </svg>
           <p>Book</p>
         </div>
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             fill="#000000"
             version="1.1"
@@ -349,7 +383,7 @@
         </div>
       </div>
       <div class="lower-nav">
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -370,7 +404,7 @@
           </svg>
           <p>Setting</p>
         </div>
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             viewBox="0 0 512 512"
             version="1.1"
@@ -408,7 +442,7 @@
           </svg>
           <p>About Us</p>
         </div>
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             fill="#000000"
             height="200px"
@@ -439,7 +473,7 @@
           </svg>
           <p>Contact Us</p>
         </div>
-        <div class="nav-bar flex-box">
+        <div class="nav-bar animate flex-box">
           <svg
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -463,236 +497,6 @@
         </div>
       </div>
     </nav>
-    <main>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-      <div class="book">
-        <div class="book-info">
-          <img
-            src="assets/image/book-closed-svgrepo-com.svg"
-            alt="image of a book"
-            width="100px"
-            height="100px"
-          />
-          <div>
-            <p>Title:</p>
-            <p>Author:</p>
-            <p>Pages:</p>
-          </div>
-        </div>
-        <div class="book-setting">
-          <button>Read</button>
-          <img src="assets/image/favorite.svg" alt="favorite icon" />
-        </div>
-      </div>
-    </main>
-    <footer></footer>
+    <main></main>
   </body>
 </html>
